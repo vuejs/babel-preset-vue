@@ -1,0 +1,32 @@
+{
+  "name": "babel-preset-vue",
+  "version": "0.0.0",
+  "description": "Babel preset for all Vue plugins.",
+  "license": "MIT",
+  "repository": "egoist/babel-preset-vue",
+  "author": {
+    "name": "EGOIST",
+    "email": "0x142857@gmail.com",
+    "url": "github.com/egoist"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "echo lol"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "babel",
+    "vue",
+    "jsx",
+    "preset"
+  ],
+  "dependencies": {
+    "babel-helper-vue-jsx-merge-props": "^2.0.2",
+    "babel-plugin-syntax-jsx": "^6.18.0",
+    "babel-plugin-transform-vue-jsx": "^3.1.2"
+  }
+}
