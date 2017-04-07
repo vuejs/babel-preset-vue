@@ -1,6 +1,6 @@
 {
   "name": "babel-preset-vue",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Babel preset for all Vue plugins.",
   "license": "MIT",
   "repository": "egoist/babel-preset-vue",
