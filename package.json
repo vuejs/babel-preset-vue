@@ -12,11 +12,15 @@
   "engines": {
     "node": ">=4"
   },
+  "unpkg": "dist/babel-preset-vue.js",
   "scripts": {
-    "test": "echo lol"
+    "test": "echo lol",
+    "prepublish": "npm run build",
+    "build": "bili index.js --format umd --module-name PresetVue"
   },
   "files": [
-    "index.js"
+    "index.js",
+    "dist"
   ],
   "keywords": [
     "babel",
@@ -28,5 +32,8 @@
     "babel-helper-vue-jsx-merge-props": "^2.0.2",
     "babel-plugin-syntax-jsx": "^6.18.0",
     "babel-plugin-transform-vue-jsx": "^3.1.2"
+  },
+  "devDependencies": {
+    "bili": "^0.14.0"
   }
 }
