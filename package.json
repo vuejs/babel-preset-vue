@@ -12,14 +12,15 @@
   "engines": {
     "node": ">=4"
   },
+  "main": "dist/babel-preset-vue.common.js",
   "unpkg": "dist/babel-preset-vue.js",
+  "cdn": "dist/babel-preset-vue.js",
   "scripts": {
     "test": "echo lol",
     "prepublish": "npm run build",
-    "build": "bili index.js --format umd --compress umd --module-name PresetVue"
+    "build": "bili index.js --format umd,cjs --compress umd --module-name PresetVue"
   },
   "files": [
-    "index.js",
     "dist"
   ],
   "keywords": [
