@@ -1,5 +1,7 @@
+import VueJSX from 'babel-plugin-transform-vue-jsx'
+
 export default {
   plugins: [
-    require('babel-plugin-transform-vue-jsx')
+    VueJSX
   ]
 }
