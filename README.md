@@ -8,6 +8,8 @@ Babel preset for all Vue plugins.
 npm install -D babel-preset-vue
 ```
 
+CDN: [UNPKG](https://unpkg.com/babel-preset-vue/)
+
 ## Usage
 
 ```js
