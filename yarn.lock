@@ -132,9 +132,9 @@ babel-helper-vue-jsx-merge-props:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/babel-helper-vue-jsx-merge-props/-/babel-helper-vue-jsx-merge-props-2.0.2.tgz#aceb1c373588279e2755ea1cfd35c22394fd33f8"
 
-babel-plugin-jsx-event-modifiers@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/babel-plugin-jsx-event-modifiers/-/babel-plugin-jsx-event-modifiers-1.0.2.tgz#287f774bd0dfda9abc125a0f01aeb51eaff49806"
+babel-plugin-jsx-event-modifiers@^2.0.2:
+  version "2.0.2"
+  resolved "http://registry.npm.taobao.org/babel-plugin-jsx-event-modifiers/download/babel-plugin-jsx-event-modifiers-2.0.2.tgz#c2832ada05be8ab958c5871b569ea0c0bb49bbfa"
 
 babel-plugin-jsx-v-model@^2.0.1:
   version "2.0.1"
