@@ -42,22 +42,6 @@ Vue.component('hello-world', {
 
 More information available on [plugin's github page](https://github.com/nickmessing/babel-plugin-jsx-event-modifiers).
 
-#### Supports functional components.
-
-Uses `babel-plugin-jsx-vue-functional` for functional components.
-
-Example:
-```js
-const A = ({ props }) => <h1>{props.msg}</h1>
-const B = ({ listeners }) => (
-  <div onClick={listeners.click}>
-    <A msg="Hello World!">
-  </div>
-)
-```
-
-More information available on [plugin's github page](https://github.com/nickmessing/babel-plugin-jsx-vue-functional).
-
 #### Supports v-model.
 
 Uses `babel-plugin-jsx-v-model` for two-way data binding with form elements.
