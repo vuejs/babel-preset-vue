@@ -65,6 +65,45 @@ Vue.component('hello-world', {
 
 More information available on [plugin's github page](https://github.com/nickmessing/babel-plugin-jsx-v-model).
 
+### Supports sync modifier
+
+Uses [babel-plugin-vue-jsx-sync](https://github.com/njleonzhang/babel-plugin-vue-jsx-sync) for supporting sync modifier.
+
+Example:
+```js
+function a() {
+  return (
+    <div>
+      <component visible$sync={ this.test }>I am newbie</component>
+    </div>
+  )
+}
+```
+is complied to:
+
+```js
+function a() {
+  return h(
+    "div",
+    null,
+    [h(
+      "component",
+      {
+        attrs: { visible: this.test },
+        on: {
+          "update:visible": $$val => {
+            this.test = $$val;
+          }
+        }
+      },
+      ["I am newbie"]
+    )]
+  );
+}
+```
+
+More information available on [plugin's github page](https://github.com/njleonzhang/babel-plugin-vue-jsx-sync).
+
 ## License
 
 MIT &copy; [EGOIST](https://github.com/egoist)
