@@ -154,6 +154,10 @@ babel-plugin-transform-vue-jsx@^3.5.0:
   dependencies:
     esutils "^2.0.2"
 
+babel-plugin-vue-jsx-sync@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.npmjs.org/babel-plugin-vue-jsx-sync/-/babel-plugin-vue-jsx-sync-0.0.4.tgz#2641a13bbe6d6d96c942eb6b7ff5a5d6d52a4307"
+
 babylon@^6.14.0, babylon@^6.15.0:
   version "6.16.1"
   resolved "https://registry.npmjs.org/babylon/-/babylon-6.16.1.tgz#30c5a22f481978a9e7f8cdfdf496b11d94b404d3"

@@ -34,7 +34,8 @@
     "babel-plugin-jsx-event-modifiers": "^2.0.2",
     "babel-plugin-jsx-v-model": "^2.0.1",
     "babel-plugin-syntax-jsx": "^6.18.0",
-    "babel-plugin-transform-vue-jsx": "^3.5.0"
+    "babel-plugin-transform-vue-jsx": "^3.5.0",
+    "babel-plugin-vue-jsx-sync": "^0.0.4"
   },
   "devDependencies": {
     "bili": "^0.17.2"
