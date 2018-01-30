@@ -12,13 +12,14 @@
   "engines": {
     "node": ">=4"
   },
-  "main": "dist/babel-preset-vue.common.js",
-  "unpkg": "dist/babel-preset-vue.js",
-  "cdn": "dist/babel-preset-vue.js",
+  "main": "dist/babel-preset-vue.cjs.js",
+  "unpkg": "dist/babel-preset-vue.min.js",
+  "cdn": "dist/babel-preset-vue.min.js",
+  "jsdelivr": "dist/babel-preset-vue.min.js",
   "scripts": {
     "test": "echo lol",
-    "prepublish": "npm run build",
-    "build": "bili index.js --format umd,cjs --compress umd --module-name PresetVue"
+    "prepublishOnly": "npm run build",
+    "build": "bili index.js --format umd,cjs,umd-min --module-name PresetVue"
   },
   "files": [
     "dist"
@@ -37,6 +38,6 @@
     "babel-plugin-transform-vue-jsx": "^3.5.0"
   },
   "devDependencies": {
-    "bili": "^0.17.2"
+    "bili": "^2.2.6"
   }
 }
