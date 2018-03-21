@@ -38,6 +38,6 @@
     "babel-plugin-transform-vue-jsx": "^3.5.0"
   },
   "devDependencies": {
-    "bili": "^2.2.6"
+    "bili": "^3.0.0"
   }
 }

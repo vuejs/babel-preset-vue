@@ -12,15 +12,36 @@ CDN: [UNPKG](https://unpkg.com/babel-preset-vue/)
 
 ## Usage
 
-```js
+In your `.babelrc`:
+
+```json
 {
   "presets": ["vue"]
 }
 ```
 
-#### Supports event modifiers.
+You can toggle specific features, by default all features are enabled, e.g.:
 
-Uses `babel-plugin-jsx-event-modifier` for event modifiers.
+```json
+{
+  "presets": [
+    ["vue", {
+      "eventModifiers": false
+    }]
+  ]
+}
+```
+
+
+## JSX Features
+
+> Note that following features are not available for babel v7 currently, you may disable them if necessary.
+
+### Event modifiers
+
+Option name: `eventModifiers`
+
+Uses [`babel-plugin-jsx-event-modifier`](https://github.com/nickmessing/babel-plugin-jsx-event-modifiers) for adding event modifiers support.
 
 Example:
 ```js
@@ -40,13 +61,14 @@ Vue.component('hello-world', {
 })
 ```
 
-More information available on [plugin's github page](https://github.com/nickmessing/babel-plugin-jsx-event-modifiers).
+### v-model
 
-#### Supports v-model.
+Options name: `vModel`
 
-Uses `babel-plugin-jsx-v-model` for two-way data binding with form elements.
+Uses [`babel-plugin-jsx-v-model`](https://github.com/nickmessing/babel-plugin-jsx-v-model) for adding `v-model` support.
 
 Example:
+
 ```js
 Vue.component('hello-world', {
   data: () => ({
@@ -62,8 +84,6 @@ Vue.component('hello-world', {
   }
 })
 ```
-
-More information available on [plugin's github page](https://github.com/nickmessing/babel-plugin-jsx-v-model).
 
 ## License
 
