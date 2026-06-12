@@ -4,6 +4,10 @@
   "description": "Babel preset for all Vue plugins.",
   "license": "MIT",
   "repository": "egoist/babel-preset-vue",
+  "homepage": "https://github.com/vuejs/babel-preset-vue#readme",
+  "bugs": {
+    "url": "https://github.com/vuejs/babel-preset-vue/issues"
+  },
   "author": {
     "name": "EGOIST",
     "email": "0x142857@gmail.com",
